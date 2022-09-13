@@ -1,0 +1,22 @@
+hvelho = 0
+som = 0
+maioridade = 20
+count = 0
+
+for c in range (1, 5):
+    nome = str(input("Digite um nome: ")).strip()
+    idade = int(input("Digite sua idade: "))
+    sexo = str(input("M/F: ")).strip().upper()
+
+    som += idade
+
+    if sexo == "M":
+        if idade > hvelho:
+            idade = hvelho
+            N_H_velho = nome
+
+    if sexo == "F":
+        if idade < 20:
+            count += 1
+
+print(f"a média de idades foi {som / 4}, o nome do cara mais velho é {N_H_velho} e {count} mulheres tem menos de 20 anos ")
